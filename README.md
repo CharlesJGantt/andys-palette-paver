@@ -13,7 +13,6 @@ Fill the palette with materials such as stone, gravel, andesite, mossy blocks, w
 
 ## Download
 
-- [Download Andy's Palette Paver v0.2.6 directly from GitHub](./andys-palette-paver-v0.2.6.mcaddon)
 - [Download and follow the project on CurseForge](https://www.curseforge.com/minecraft-bedrock/addons/andys-palette-paver-randomizer)
 
 ### [▶ Watch the demo video on YouTube](https://youtu.be/q85X5XPLE_g)
