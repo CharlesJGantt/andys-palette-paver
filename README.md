@@ -3,7 +3,7 @@
 ![Andy's Palette Paver randomizes the placement order of blocks from hotbar slots 2–9 in Minecraft Bedrock. Use a renamed stick to quickly build naturally textured roads, paths, floors, walls, ruins, and terrain—no cheats required.](https://media.forgecdn.net/attachments/1828/49/andys-palette-paver-hero-16x9-jpg.jpg)
 
 [![Minecraft Bedrock](https://img.shields.io/badge/Minecraft-Bedrock-62B47A)](https://www.minecraft.net/)
-[![Version](https://img.shields.io/badge/version-0.2.6-4C8BF5)](./andys-palette-paver-v0.2.6.mcaddon)
+[![Version](https://img.shields.io/badge/version-0.2.7-4C8BF5)](https://www.curseforge.com/minecraft-bedrock/addons/andys-palette-paver-randomizer)
 [![CurseForge](https://img.shields.io/badge/Download-CurseForge-F16436)](https://www.curseforge.com/minecraft-bedrock/addons/andys-palette-paver-randomizer)
 ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-CB3A31)
 
@@ -182,7 +182,7 @@ tnt, bedrock, minecraft:chest
 ```
 
 **Favorite block IDs**  
-Marks matching materials as Favorites in Palette Diagnostics and stores those labels in presets. In version 0.2.6, Favorites are informational and do not alter probability or override other safety settings.
+Marks matching materials as Favorites in Palette Diagnostics and stores those labels in presets. In version 0.2.7, Favorites are informational and do not alter probability or override other safety settings.
 
 ### Mode Details
 
@@ -444,13 +444,13 @@ Duplicate stacks of the same block can also increase that material's overall pro
 
 ### Holding the place button places only once
 
-Confirm that version 0.2.6 or newer is installed and active on the world. Older test versions did not continuously attempt placement while the control was held.
+Confirm that version 0.2.7 or newer is installed and active on the world. Older test versions did not continuously attempt placement while the control was held.
 
 After importing an update, check the world's Behavior Packs and ensure it is using the newest version.
 
 ### Placement pushes the player or stacks blocks unexpectedly
 
-Install version 0.2.6 or newer. Current versions include movement-aware placement timing and player collision checks designed for building while walking or sprinting.
+Install version 0.2.7 or newer. Current versions include movement-aware placement timing and player collision checks designed for building while walking or sprinting.
 
 Aim at the leading face of the path while moving forward. Palette Paver will still allow vertical placement when the destination is clear.
 
@@ -481,6 +481,21 @@ Use **Diagnostics** to see whether the item is recognized. Unknown custom placem
 This is expected. Palette Paver starts disabled by default, and **Reset to Defaults** restores that state.
 
 After resetting, reopen **General Settings** and switch **Enabled** on.
+
+## Changelog
+
+### Version 0.2.7 — Settings Form Fix
+
+- Fixed enabled palette slots and weights being saved in the wrong positions.
+- Fixed the incorrect **“no eligible palette blocks”** message appearing when valid blocks were present in hotbar slots 2–9.
+- Corrected the same settings alignment issue in **Palette and Weights**, **Palette Safety**, **Mode Details**, and **Progressive Blend Weights**.
+- Added regression coverage to prevent Bedrock informational labels from shifting saved form values again.
+
+#### Updating from version 0.2.6
+
+After installing version 0.2.7, open **Palette Paver Settings**, select **Reset to Defaults** once, re-enable Palette Paver, and configure your palette slots and weights again.
+
+Placement timing, block sounds, randomization modes, presets, and existing building behavior remain unchanged.
 
 ## Support Andy's Add-ons
 
